@@ -7,6 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
+  letter-spacing: normal;
 }
 
 .container {
@@ -158,6 +159,65 @@ img {
   z-index: 10;
 }
 
+/* About */
+
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+height: auto;
+   padding: 0 8rem; 
+  margin-top: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+
+.about-img {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8rem;  
+  flex: 50%;
+  z-index: 1;
+ 
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+ padding-top: 2rem;
+   padding-left: 8rem; 
+  text-align: left;
+ flex: 50%; 
+
+}
+
+.about-info h1 {
+  color: navy;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+ .about-info p {
+   padding-top: 0.8rem;
+  font-size: 1.6rem;
+  color: navy;
+ 
+}
+
+.about-list {
+  margin-left: 2.2rem;
+  padding-left: 1rem
+
+}
+
+.about-list li {
+  padding: 0.5rem;
+ 
+}
+
 
 /* Services Section */
 
@@ -181,7 +241,7 @@ margin-bottom: 0;
   padding-right: 2rem;
   padding-top: 5.8rem;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
  
 }
@@ -191,7 +251,7 @@ margin-bottom: 0;
   flex-direction: column;
   padding-right: 2rem;
   padding-left: 2rem;
-  text-align: justify;
+  text-align: left;
   width: 100%;
   /* margin-bottom: 2rem; */
 
@@ -264,7 +324,7 @@ flex: 50%;
 #contact-form label {
   display: block;
   margin-bottom: 4px;
-  text-align: justify;
+  text-align: left;
 }
 #contact-form input,
 #contact-form textarea {
@@ -330,13 +390,13 @@ flex: 50%;
   .navbar {
     flex-direction: column;
     height: 105px;
-    padding: 10px 20px;
+    padding: 10px 30px;
   }
 
   .navbar a {
     padding: 10px 18px 1px;
     margin: 0 3px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
  
@@ -366,6 +426,35 @@ flex: 50%;
     margin-top: 1rem;
   }
 
+  section#about {
+    flex-direction: column-reverse;
+    padding: 1rem 2rem 0;
+    margin-top: 1rem;
+  }
+ 
+  .about-list li {
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  .about-info {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .about-info p {
+    font-size: 2.2rem;
+  }
+
+  .about-img {
+    padding: 1rem 0 0;
+  }
+
+  section#contact-form{
+    flex-direction: column-reverse;
+   padding: 1rem 0.5rem;
+   margin-top: 1rem;
+  }
 
   section#services {
     flex-direction: column;
@@ -381,7 +470,7 @@ flex: 50%;
     padding: 0.5rem 0;
   }
   .services-img {
-    padding: 2rem 0 0;
+    padding: 0 0;
   }
 
   section#contact-form{
@@ -402,7 +491,7 @@ flex: 50%;
 #contact-form p {
   padding: 0 1.2rem 2rem;
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: left;
  
 }
 
@@ -451,28 +540,13 @@ flex: 50%;
     text-align: center;
   }
 
-  section#services {
-    flex-direction: column;
-    padding: 1rem 1rem;
-  }
-
-  .services-info p {
-    font-size: 1.1rem;
-  }
-  .services-list {
-    padding-top: 1rem;
-    font-size: 0.8rem;
-  }
-
-  #contact-form p {
-    padding-bottom: 2rem;
-    font-size: 1rem;
-    text-align: center;
-  }
-
 }
 
 @media (max-width:568px) {
+
+  #navbar a {
+    font-size: 0.6rem;
+  }
 
   .showcase p {
     font-size: 13px;
