@@ -37,7 +37,7 @@ a {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  background-color: #209b3d;
 
 }
 
@@ -83,7 +83,7 @@ img {
 }
 
 .navbar a:hover {
-  border-bottom: #fff 3px solid;
+  border-bottom: #000a19 3px solid;
 }
 
 .navbar ul {
@@ -94,6 +94,10 @@ img {
 .navbar  {
   font-weight: 400;
   
+}
+
+#navbar .navbar-brand {
+ border: none;
 }
  
 .logo-img{
