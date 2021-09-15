@@ -73,6 +73,7 @@ img {
 
 .navbar a {
   color: #0298fc;
+  text-shadow: 1px 1px 1px #000000;
   padding: 10px 20px;
   margin: 0 5px;
   text-decoration: none;
@@ -121,9 +122,11 @@ img {
 
 .showcase .content h1 {
   font-size: 3rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 .showcase .content h2 {
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  text-shadow: 2px 2px 4px #000000;
   font-size: 2.5rem;
   color: #0298fc;
   text-transform: uppercase;
@@ -132,6 +135,7 @@ img {
 .showcase .content p {
   font-size: 1.5rem;
   margin: 0 2rem 0.8rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .showcase::before {
