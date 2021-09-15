@@ -72,7 +72,7 @@ img {
 
 
 .navbar a {
-  color: #fff;
+  color: #0c3574;
   padding: 10px 20px;
   margin: 0 5px;
   text-decoration: none;
@@ -132,7 +132,7 @@ img {
 }
 .showcase .content h2 {
   font-size: 2.5rem;
-  color: #57aee9;
+  color: #0c3574;
   text-transform: uppercase;
 }
 
@@ -148,7 +148,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.0);
 }
 
  .showcase * {
@@ -178,7 +178,7 @@ height: auto;
   display: flex;
   flex-direction: column;
   padding-right: 8rem;  
-  flex: 50%;
+  flex: 1;
   z-index: 1;
  
 }
@@ -189,7 +189,7 @@ height: auto;
  padding-top: 2rem;
    padding-left: 8rem; 
   text-align: left;
- flex: 50%; 
+ flex: 1; 
 
 }
 
@@ -200,10 +200,14 @@ height: auto;
   padding-bottom: 1rem;
 }
 
- .about-info p {
+ .about-info p + p{
    padding-top: 0.8rem;
   font-size: 1.6rem;
   color: navy;
+  }
+ .about-info p .phone {
+    color: inherit;
+    text-decoration: none;
  
 }
 
@@ -240,7 +244,7 @@ margin-bottom: 0;
   flex-direction: column;
   padding-right: 2rem;
   padding-top: 5.8rem;
-  width: 100%;
+  flex: 1;
   /* position: relative; */
   z-index: 1;
  
@@ -252,7 +256,7 @@ margin-bottom: 0;
   padding-right: 2rem;
   padding-left: 2rem;
   text-align: left;
-  width: 100%;
+  flex: 1;
   /* margin-bottom: 2rem; */
 
 }
@@ -302,7 +306,7 @@ text-align: center;
  .contact-image {
  display: flex;
  flex-direction: column;
-flex: 50%; 
+flex:1; 
   height: 100%;
   padding-top: 6rem;
   z-index: 1;
@@ -311,7 +315,7 @@ flex: 50%;
 .form-container{
   display: flex;
   flex-direction: column;
- flex: 50%;
+ flex: 1;
   height: 100%;
   z-index: 1;
   
@@ -363,10 +367,10 @@ flex: 50%;
   text-align: center;
 }
 
-#contact-form p .phone {
+.phone {
   color: inherit;
   text-decoration: none;
-}
+} 
 
 #contact-form .btn {
   margin-top: 1rem;
